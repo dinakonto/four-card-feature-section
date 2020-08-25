@@ -38,16 +38,22 @@ p
   text-align: center
   padding-top: 30px
   padding-bottom: 80px
+  max-width: 510px
+  margin: 0 auto
 .regular-block
   font-weight: $font-weight-light
   display: block
 
 // CARDS
+#card-area
+  margin: 0 auto
+  max-width: 1110px
+  display: grid
 .card
   background: white
   border-radius: 4px 4px 8px 8px
   padding: 25px
-  margin-bottom: 25px
+  margin-bottom: 30px
   border-top: 3px solid $col-neutral-dark
   -webkit-box-shadow: $shadow
   -moz-box-shadow: $shadow
@@ -69,3 +75,12 @@ p
   border-top-color: $col-primary-orange
 .card:last-of-type
   border-top-color: $col-primary-blue
+
+/*
+ * RESPONSIVE CHANGES FOR:
+ * Medium viewports, over 650px wide
+ */
+@media screen and (min-width: 650px)
+  #card-area
+    grid-template-columns: 1fr 1fr
+    grid-gap: 0 30px

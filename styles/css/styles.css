@@ -30,6 +30,8 @@ p {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 80px;
+  max-width: 510px;
+  margin: 0 auto;
 }
 
 .regular-block {
@@ -37,11 +39,17 @@ p {
   display: block;
 }
 
+#card-area {
+  margin: 0 auto;
+  max-width: 1110px;
+  display: grid;
+}
+
 .card {
   background: white;
   border-radius: 4px 4px 8px 8px;
   padding: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   border-top: 3px solid #4c4e61;
   -webkit-box-shadow: 0px 18px 18px -8px rgba(76, 78, 97, 0.2);
   -moz-box-shadow: 0px 18px 18px -8px rgba(76, 78, 97, 0.2);
@@ -77,6 +85,16 @@ p {
 
 .card:last-of-type {
   border-top-color: #549ef2;
+}
+
+/* * RESPONSIVE CHANGES FOR:
+ * * Medium viewports, over 650px wide
+ * */
+@media screen and (min-width: 650px) {
+  #card-area {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
