@@ -1,3 +1,82 @@
+/* * BASE LAYOUT
+ * */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", Helvetica, sans-serif;
+  color: #4c4e61;
+}
 
+body {
+  margin: 0;
+  padding: 32px;
+  font-size: 15px;
+  background: #fafafa;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+p {
+  line-height: 1.6;
+  color: #a3a5ae;
+}
+
+#heading {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.regular-block {
+  font-weight: 200;
+  display: block;
+}
+
+.card {
+  background: white;
+  border-radius: 4px 4px 8px 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-top: 3px solid #4c4e61;
+  -webkit-box-shadow: 0px 18px 18px -8px rgba(76, 78, 97, 0.2);
+  -moz-box-shadow: 0px 18px 18px -8px rgba(76, 78, 97, 0.2);
+  box-shadow: 0px 18px 18px -8px rgba(76, 78, 97, 0.2);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+.card .icon {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.card:first-of-type {
+  border-top-color: #45d3d3;
+}
+
+.card:nth-of-type(2) {
+  border-top-color: #ea5353;
+}
+
+.card:nth-of-type(3) {
+  border-top-color: #fcaf4a;
+}
+
+.card:last-of-type {
+  border-top-color: #549ef2;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -11,4 +11,61 @@ $font-weight-light: 200
 $font-weight-regular: 400
 $font-weight-bold: 600
 $font-base-size: 15px
-$shadow: 0px 0px 0px 0px rgba(0,0,0,0.5)
+$shadow: 0px 18px 18px -8px rgba(76,78,97,0.2)
+
+/*
+ * BASE LAYOUT
+ */
+*
+  box-sizing: border-box
+  font-family: $font-stack
+  color: $col-neutral-dark
+body
+  margin: 0
+  padding: 32px
+  font-size: $font-base-size
+  background: $col-neutral-light
+h1
+  font-size: 1.6em
+h2
+  font-size: 1.3em
+p
+  line-height: 1.6
+  color: $col-neutral-medium
+
+// HEADING
+#heading
+  text-align: center
+  padding-top: 30px
+  padding-bottom: 80px
+.regular-block
+  font-weight: $font-weight-light
+  display: block
+
+// CARDS
+.card
+  background: white
+  border-radius: 4px 4px 8px 8px
+  padding: 25px
+  margin-bottom: 25px
+  border-top: 3px solid $col-neutral-dark
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+.card h2
+  margin-top: 0
+  margin-bottom: 5px
+.card p
+  font-size: 0.9em
+  margin-top: 0
+.card .icon
+  text-align: right
+  margin-top: 30px
+.card:first-of-type
+  border-top-color: $col-primary-cyan
+.card:nth-of-type(2)
+  border-top-color: $col-primary-red
+.card:nth-of-type(3)
+  border-top-color: $col-primary-orange
+.card:last-of-type
+  border-top-color: $col-primary-blue
